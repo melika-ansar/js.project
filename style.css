@@ -8,6 +8,16 @@
     src: url(./atsess/font/Inter_18pt-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: interextra;
+    src: url(./atsess/font/Inter_28pt-Light.ttf);
+}
+
+@font-face {
+  font-family: comic;
+  src: url(./atsess/font/ComicRelief.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -90,3 +100,47 @@ circle {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+  .color-checkbox{
+    accent-color: black;
+  }
+
+  .input-none{
+    outline: none;
+}
+
+.input-none:focus {
+    border: 3px solid black;
+}
+
+.submit-button{
+background-color: #727272;
+}
+
+.submit-button.active{
+    background-color:#212529;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* مخفی کردن نوار اسکرول برای مرورگرهای Webkit */
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none; /* مخفی کردن نوار اسکرول در IE و Edge */
+    scrollbar-width: none; /* مخفی کردن نوار اسکرول در فایرفاکس */
+  }
+
+  .input-search{
+    outline: none;
+  }
+
+  .input-search:focus {
+    border: 1px solid black;
+}
+
+.bc{
+  box-shadow:-1px 8px 19px -7px rgba(0,0,0,0.49);
+}
+
+.bs{
+  box-shadow: 0px 4px 32px  rgba(0,0,0,0.1);
+}
