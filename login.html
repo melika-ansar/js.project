@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+
+    <div>
+        <img id="goPage" class="w-[16] h-[14] pt-[21px] pl-[24px]" src="./atsess/image/flash.png" alt="flash" >
+
+    <div class="flex justify-center">
+        <img class="w-[54px] h-[81px] mt-[132px]" src="./atsess/image/logo.png" alt="logo">
+    </div>
+
+    <div class="flex justify-center">
+        <p class="font-[intersemi] text-[2rem] mt-[118px] text-[#152536]">Login to Your Account</p>
+    </div>
+
+    <div id="login">
+
+        <div class="flex justify-center">
+            <img class="w-[17px] h-[17px] absolute mt-[59px] mr-[335px]" src="./atsess/image/envelope-fill.png"
+                alt="envelope">
+            <input id="email-input"
+                class="w-[380px] h-[37px] bg-[#f9f9f9] rounded px-[38px] py-[20px] mt-[48px] font-[interextra] font-medium input-none change"
+                type="email" placeholder="Email">
+        </div>
+
+        <div class="flex justify-center">
+            <img class="class=w-[16px] h-[16px] absolute mt-[32.5px] mr-[335px] " src="./atsess/image/lock-fill.png"
+                alt="lock">
+            <input id="password-input"
+                class="w-[380px] h-[37px] bg-[#f9f9f9] rounded px-[38px] py-[20px] mt-[21px] font-[interextra] font-medium input-none change"
+                type="password" placeholder="Password">
+                <img class="absolute w-[16px] h-[16px] mt-[32.6px] ml-[335px]" src="./atsess/image/eye-slash-fill.png" alt="hide">
+        </div>
+
+        <div class="flex gap-2 justify-center">
+            <input class="w-[16px] h-[16px] rounded mt-[48px] color-checkbox" type="checkbox" placeholder="gf">
+            <p class="mt-[41px] text-lg font-[interextra] font-medium">Remember me</p>
+        </div>
+
+        <div class="flex justify-center">
+            <button id="signInBtn" class="text-white w-[380px] h-[47px] rounded-[30px] mt-[14rem] bg-[#212529]"
+                type="submit">Sign in</button>
+        </div>
+
+        <small id="error-box"></small>
+
+    </div>
+
+    <script type="module" src="./login.js"></script>
 </body>
+
 </html>
